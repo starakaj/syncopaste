@@ -17,7 +17,7 @@ function StarGenerator (): IEnumerator {
 	if (active) {
 		var newTransform = transform;
 		newTransform.position.x = Random.Range(-screenUnitWidth, screenUnitWidth);
-		Instantiate(prefabs[0], newTransform.position, Quaternion.identity);
+		Instantiate(prefabs[Random.Range(0, prefabs.Length)], newTransform.position, Quaternion.identity);
 		ResetDelay();
 	}
 	

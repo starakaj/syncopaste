@@ -48,8 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\KeyboardSpaceFlight.js" />
      <Compile Include="Assets\Scripts\PixelPerfectCamera.js" />
+     <Compile Include="Assets\Scripts\SimpleSequencer.js" />
      <Compile Include="Assets\Scripts\StarSpawner.js" />
      <Compile Include="Assets\Scripts\TranslatingSprite.js" />
+     <Compile Include="Assets\Scripts\TriggerListener.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
