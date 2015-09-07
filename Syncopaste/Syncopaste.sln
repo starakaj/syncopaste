@@ -1,6 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{2EAD43AA-36FA-DA38-0F1A-6F305DA8E0FF}") = "Syncopaste", "Assembly-CSharp-firstpass.csproj", "{62177817-5E7C-1BE8-D3E9-C8EFDE8233A2}"
+EndProject
+Project("{2EAD43AA-36FA-DA38-0F1A-6F305DA8E0FF}") = "Syncopaste", "Assembly-CSharp.csproj", "{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}"
+EndProject
 Project("{2EAD43AA-36FA-DA38-0F1A-6F305DA8E0FF}") = "Syncopaste", "Assembly-UnityScript.unityproj", "{93AE624E-CD8A-732F-97A5-B3BA62A0A28B}"
 EndProject
 Global
@@ -9,6 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62177817-5E7C-1BE8-D3E9-C8EFDE8233A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62177817-5E7C-1BE8-D3E9-C8EFDE8233A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62177817-5E7C-1BE8-D3E9-C8EFDE8233A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62177817-5E7C-1BE8-D3E9-C8EFDE8233A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93AE624E-CD8A-732F-97A5-B3BA62A0A28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93AE624E-CD8A-732F-97A5-B3BA62A0A28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93AE624E-CD8A-732F-97A5-B3BA62A0A28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-														GlobalSection(MonoDevelopProperties) = preSolution
+																									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -1,12 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SimpleSequencer.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Pixelplacement/iTween/ReadMe!/ReadMe!.txt">
     <Files>
-      <File FileName="Assets/Scripts/SimpleSequencer.js" Line="26" Column="69" />
-      <File FileName="Assets/Scripts/KeyboardSpaceFlight.js" Line="3" Column="1" />
-      <File FileName="Assets/Scripts/PixelPerfectCamera.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/TranslatingSprite.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/StarSpawner.js" Line="7" Column="30" />
+      <File FileName="Assets/Scripts/SynchronizedAudioPlayer.cs" Line="36" Column="47" />
+      <File FileName="Assets/Scripts/smflite-master/SmfLite.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MidiEventListener.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ScaleOnNote.cs" Line="6" Column="30" />
+      <File FileName="Assets/Plugins/Pixelplacement/iTween/Sample/RotateSample.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Pixelplacement/iTween/ReadMe!/ReadMe!.txt" Line="3" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
