@@ -9,8 +9,7 @@ public class SynchronizedAudioPlayer : MonoBehaviour {
 	
 	private SmfLite.MidiTrackSequencer midiSeq;
 
-	// Use this for initialization
-	void Start () {
+	public void Play() {
 		AudioSource source = GetComponent<AudioSource> () as AudioSource;
 		SmfLite.MidiFileContainer song = SmfLite.MidiFileLoader.Load (midiFile.bytes);
 		midiSeq = new SmfLite.MidiTrackSequencer (song.tracks [0], song.division, bpm);
@@ -23,10 +22,17 @@ public class SynchronizedAudioPlayer : MonoBehaviour {
 			HandleMidiEvent(e);
 		}
 	}
+
+	public void Stop() {
+		AudioSource source = GetComponent<AudioSource> () as AudioSource;
+
+		source.Stop ();
+		midiSeq = null;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (midiSeq.Playing) {
+		if (midiSeq != null && midiSeq.Playing) {
 			foreach (SmfLite.MidiEvent e in midiSeq.Advance (Time.deltaTime)) {
 				HandleMidiEvent (e);
 			}
@@ -35,7 +41,6 @@ public class SynchronizedAudioPlayer : MonoBehaviour {
 
 	void HandleMidiEvent (SmfLite.MidiEvent e) {
 		MidiEventListener[] listeners = FindObjectsOfType<MidiEventListener> ();
-		Debug.Log ("Event: " + e);
 		foreach (MidiEventListener l in listeners) {
 			if (e.status == 144 || !l.ignoreNoteOff) {
 				if (l.note == e.data1) {

@@ -46,10 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\KeyboardSpaceFlight.js" />
-     <Compile Include="Assets\Scripts\PixelPerfectCamera.js" />
      <Compile Include="Assets\Scripts\StarSpawner.js" />
-     <Compile Include="Assets\Scripts\TranslatingSprite.js" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Sounds\Mucking.txt" />
  <Reference Include="UnityEngine.UI">

@@ -46,8 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
+     <Compile Include="Assets\Scripts\DieOnCollision.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameObjectUtil.cs" />
+     <Compile Include="Assets\Scripts\InstantVelocity.cs" />
+     <Compile Include="Assets\Scripts\KeyboardSpaceFlight.cs" />
      <Compile Include="Assets\Scripts\MidiEventListener.cs" />
+     <Compile Include="Assets\Scripts\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\PixelPerfectCamera.cs" />
+     <Compile Include="Assets\Scripts\RecycleGameObject.cs" />
      <Compile Include="Assets\Scripts\ScaleOnNote.cs" />
+     <Compile Include="Assets\Scripts\StarSpawner.cs" />
      <Compile Include="Assets\Scripts\SynchronizedAudioPlayer.cs" />
      <Compile Include="Assets\Scripts\smflite-master\SmfLite.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />

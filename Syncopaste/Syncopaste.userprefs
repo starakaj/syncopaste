@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../farts2d/Assets/Scripts/GameObjectUtil.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KeyboardSpaceFlight.cs">
     <Files>
-      <File FileName="../../farts2d/Assets/Scripts/GameObjectUtil.cs" Line="10" Column="24" />
+      <File FileName="Assets/Scripts/StarSpawner.cs" Line="28" Column="96" />
+      <File FileName="Assets/Scripts/InstantVelocity.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/DestroyOffscreen.cs" Line="28" Column="23" />
+      <File FileName="Assets/Scripts/KeyboardSpaceFlight.cs" Line="17" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
