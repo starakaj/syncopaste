@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\MidiEventListener.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\PixelPerfectCamera.cs" />
+     <Compile Include="Assets\Scripts\ProjectileShooter.cs" />
      <Compile Include="Assets\Scripts\RecycleGameObject.cs" />
      <Compile Include="Assets\Scripts\ScaleOnNote.cs" />
      <Compile Include="Assets\Scripts\StarSpawner.cs" />
