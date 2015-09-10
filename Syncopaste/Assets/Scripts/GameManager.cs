@@ -5,13 +5,11 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject playerPrefab;
 
-	private SynchronizedAudioPlayer audioPlayer;
 	private GameObject player;
 	private StarSpawner starSpawner;
 	private bool isGameRunning;
 
 	void Awake () {
-		audioPlayer = GameObject.Find ("Main Camera").GetComponent<SynchronizedAudioPlayer> ();
 		starSpawner = GameObject.Find ("StarSpawner").GetComponent<StarSpawner> ();
 		isGameRunning = false;
 	}
@@ -32,7 +30,6 @@ public class GameManager : MonoBehaviour {
 	void BeginGame () {
 		isGameRunning = true;
 		starSpawner.active = true;
-		audioPlayer.Play ();
 
 		player = GameObjectUtil.Instantiate (playerPrefab, Vector2.zero);
 
@@ -43,7 +40,6 @@ public class GameManager : MonoBehaviour {
 	void GameOver () {
 		isGameRunning = false;
 		starSpawner.active = false;
-		audioPlayer.Stop ();
 
 		var dieScript = player.GetComponent<DieOnCollision> ();
 		dieScript.DeathCallback -= GameOver;

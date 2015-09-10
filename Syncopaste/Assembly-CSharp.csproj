@@ -46,6 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BeatSynchronizer\BeatCounter.cs" />
+     <Compile Include="Assets\Scripts\BeatSynchronizer\BeatObserver.cs" />
+     <Compile Include="Assets\Scripts\BeatSynchronizer\BeatSynchronizer.cs" />
+     <Compile Include="Assets\Scripts\BeatSynchronizer\MIDICounter.cs" />
+     <Compile Include="Assets\Scripts\BeatSynchronizer\PatternCounter.cs" />
+     <Compile Include="Assets\Scripts\BeatSynchronizer\SynchronizerData.cs" />
      <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
      <Compile Include="Assets\Scripts\DieOnCollision.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
