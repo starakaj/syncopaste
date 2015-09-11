@@ -20,6 +20,7 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 using System.Collections.Generic;
 
 namespace SmfLite
@@ -210,9 +211,13 @@ namespace SmfLite
             
             while (pulseCounter >= pulseToNext) {
                 var pair = enumerator.Current;
+
+//				UnityEngine.Debug.Log(pair.midiEvent);
+
                 messages.Add (pair.midiEvent);
                 if (!enumerator.MoveNext ()) {
-                    playing = false;
+					playing = false;
+					UnityEngine.Debug.Log (messages);
                     break;
                 }
                 

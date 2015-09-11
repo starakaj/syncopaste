@@ -19,6 +19,7 @@ public class PatternCounter : MonoBehaviour {
 	private float[] samplePeriods;
 	private int sequenceIndex;
 	private float currentSample;
+	private float lookaheadSeconds;
 	
 	
 	void Awake ()
@@ -41,8 +42,9 @@ public class PatternCounter : MonoBehaviour {
 	/// exactly match up with the sample that corresponds to the time the audioSource clip started playing (via PlayScheduled).
 	/// </summary>
 	/// <param name="syncTime">Equal to the audio system's dsp time plus the specified delay time.</param>
-	void StartPatternCheck (double syncTime)
+	void StartPatternCheck (double syncTime, double lookahead)
 	{
+		lookaheadSeconds = (float)lookahead;
 		nextBeatSample = (float)syncTime * audioSource.clip.frequency;
 		StartCoroutine(PatternCheck());
 	}

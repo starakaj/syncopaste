@@ -4,6 +4,7 @@ using System.Collections;
 public class StarSpawner : MonoBehaviour {
 
 	public GameObject[] prefabs;
+	public CollisionManager collisionDelegate;
 	public float delay = 2f;
 	public Vector2 delayRange = new Vector2(.2f, 2);
 	public bool active = true;
@@ -26,6 +27,7 @@ public class StarSpawner : MonoBehaviour {
 			newTransform.position = position;
 
 			GameObjectUtil.Instantiate(prefabs[Random.Range(0, prefabs.Length)], newTransform.position);
+
 			ResetDelay();
 		}
 		

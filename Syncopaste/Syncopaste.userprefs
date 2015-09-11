@@ -1,19 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BeatSynchronizer/BeatSynchronizer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DieOnCollision.cs">
     <Files>
-      <File FileName="Assets/Scripts/StarSpawner.cs" Line="28" Column="96" />
-      <File FileName="Assets/Scripts/InstantVelocity.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DestroyOffscreen.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/KeyboardSpaceFlight.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MidiEventListener.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ScaleOnNote.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SynchronizedAudioPlayer.cs" Line="47" Column="26" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ProjectileShooter.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GameObjectUtil.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BeatSynchronizer/PatternCounter.cs" Line="55" Column="53" />
-      <File FileName="Assets/Scripts/BeatSynchronizer/BeatSynchronizer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ShipData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ShipState.cs" Line="16" Column="11" />
+      <File FileName="Assets/Scripts/ProjectileShooter.cs" Line="7" Column="37" />
+      <File FileName="Assets/Scripts/BeatSynchronizer/BeatObserver.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BeatSynchronizer/SynchronizerData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UpdateShipState.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/MidiEventListener.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DieOnCollision.cs" Line="9" Column="25" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StarSpawner.cs" Line="29" Column="114" />
+      <File FileName="Assets/Scripts/CollisionManager.cs" Line="6" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

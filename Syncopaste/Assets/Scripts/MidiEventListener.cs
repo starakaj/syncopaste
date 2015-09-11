@@ -17,5 +17,5 @@ public abstract class MidiEventListener : MonoBehaviour {
 	
 	}
 
-	abstract public void HandleMidiEvent(SmfLite.MidiEvent e);
+	abstract public void HandleMidiEvent(SmfLite.MidiEvent e, float lookaheadSeconds);
 }
