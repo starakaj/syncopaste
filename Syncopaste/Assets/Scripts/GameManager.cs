@@ -4,11 +4,19 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	public GameObject playerPrefab;
+	public GameObject startText;
 
 	private GameObject player;
 	private StarSpawner starSpawner;
 	private bool isGameRunning;
 	private BeatSynchronizer synchronizer;
+
+	private void SetIsGameRunning(bool running) {
+		isGameRunning = running;
+		Color c = startText.GetComponent<SpriteRenderer> ().material.color;
+		c.a = running ? 0 : 1;
+		startText.GetComponent<SpriteRenderer> ().material.color = c;
+	}
 
 	void Awake () {
 		starSpawner = GameObject.Find ("StarSpawner").GetComponent<StarSpawner> ();
@@ -17,21 +25,24 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start () {
-		BeginGame ();
+		SetIsGameRunning (false);
+		isGameRunning = false;
+		Color c = startText.GetComponent<SpriteRenderer> ().material.color;
+		c.a = 1;
+		startText.GetComponent<SpriteRenderer> ().material.color = c;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (!isGameRunning) {
-			if (Input.anyKeyDown) {
+			if (Input.GetButtonDown("Fire1")) {
 				BeginGame();
 			}
 		}
 	}
 
 	void BeginGame () {
-		isGameRunning = true;
-		starSpawner.active = true;
+		SetIsGameRunning (true);
 
 		player = GameObjectUtil.Instantiate (playerPrefab, Vector2.zero);
 
@@ -41,7 +52,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void GameOver () {
-		isGameRunning = false;
+		SetIsGameRunning (false);
 		starSpawner.active = false;
 
 		synchronizer.Stop ();

@@ -57,11 +57,8 @@ public class SynchronizedAudioPlayer : MonoBehaviour {
 	void HandleMidiEvent (SmfLite.MidiEvent e) {
 		MidiEventListener[] listeners = FindObjectsOfType<MidiEventListener> ();
 		foreach (MidiEventListener l in listeners) {
-			if (e.status == 144 || !l.ignoreNoteOff) {
-				if (l.note == e.data1) {
-					l.HandleMidiEvent(e, 0);
-				}
-			}
+			if (l.RespondsToMidiEvent(e))
+				l.HandleMidiEvent(e, 0);
 		}
 	}
 }

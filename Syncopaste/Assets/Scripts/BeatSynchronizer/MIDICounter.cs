@@ -88,11 +88,8 @@ public class MIDICounter : MonoBehaviour {
 	void HandleMidiEvent (MidiEvent e) {
 		MidiEventListener[] listeners = FindObjectsOfType<MidiEventListener> ();
 		foreach (MidiEventListener l in listeners) {
-			if (e.status == 144 || !l.ignoreNoteOff) {
-				if (l.note == e.data1) {
-					l.HandleMidiEvent(e, lookaheadSeconds);
-				}
-			}
+			if (l.RespondsToMidiEvent(e))
+				l.HandleMidiEvent(e, lookaheadSeconds);
 		}
 	}
 }

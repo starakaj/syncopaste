@@ -1,12 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SmfLite;
 
 public class ScaleOnNote : MidiEventListener {
 
+	public byte note;
 	public Vector2 scaleRange = new Vector2 (5f, 25f);
 
-	public override void HandleMidiEvent(SmfLite.MidiEvent e, float lookaheadSeconds) {
+	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
 		StartCoroutine(PulseAfterDelay (lookaheadSeconds));
+	}
+
+	public override bool RespondsToMidiEvent(MidiEvent e) {
+		return (e.status == 144 && e.data2 == note);
 	}
 
 	IEnumerator PulseAfterDelay(float delay) {

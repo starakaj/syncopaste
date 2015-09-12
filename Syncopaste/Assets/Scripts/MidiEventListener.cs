@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SmfLite;
 
 // Probably override this whole thing when you inherit
 public abstract class MidiEventListener : MonoBehaviour {
-
-	public bool ignoreNoteOff;
-	public byte note;
 
 	// Use this for initialization
 	void Start () {
@@ -17,5 +15,7 @@ public abstract class MidiEventListener : MonoBehaviour {
 	
 	}
 
-	abstract public void HandleMidiEvent(SmfLite.MidiEvent e, float lookaheadSeconds);
+	abstract public void HandleMidiEvent(MidiEvent e, float lookaheadSeconds);
+
+	abstract public bool RespondsToMidiEvent(MidiEvent e);
 }

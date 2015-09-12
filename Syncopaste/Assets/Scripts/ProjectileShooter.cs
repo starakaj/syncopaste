@@ -1,24 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SmfLite;
 
-[RequireComponent(typeof(ShipState))]
 public class ProjectileShooter : MonoBehaviour {
 	
 	public GameObject projectilePrefab;
 
-	// Update is called once per frame
+	private byte onBeatNote = 36;
+	private byte offBeatNote = 43;
+
 	void Update () {
+		if (Input.GetButtonDown("Fire1")) {
 
-		ShipState state = GetComponent<ShipState> ();
+			MidiEvent? e = GameObject.Find("GameManager").GetComponent<EventStore>().GetCurrentMidiEvent();
 
-		if (Input.GetButtonDown ("Fire1")) {
-			var projectileTransform = transform;
-			GameObject projectile = GameObjectUtil.Instantiate(projectilePrefab, projectileTransform.position);
+			if (e.HasValue) {
+				SongData.BeatType beatType = SongData.BeatType.None;
+				if (e.Value.data1 == onBeatNote)
+					beatType = SongData.BeatType.OnBeat;
+				else if (e.Value.data1 == offBeatNote) 
+					beatType = SongData.BeatType.OffBeat;
 
-			var rcolor = state.ColorForBeatType(state.beatType);
-
-			projectile.GetComponent<SpriteRenderer> ().color = rcolor;
-			projectile.GetComponent<ShipState>().beatType = state.beatType;
+				GameObject projectile = GameObjectUtil.Instantiate(projectilePrefab, gameObject.transform.position);
+				Color c = ShipViewModel.ColorForBeatType(beatType);
+				projectile.GetComponent<SpriteRenderer>().material.color = c;
+			}
 		}
 	}
 }
