@@ -16,12 +16,12 @@ public class GameManager : MonoBehaviour {
 		Color c = startText.GetComponent<SpriteRenderer> ().material.color;
 		c.a = running ? 0 : 1;
 		startText.GetComponent<SpriteRenderer> ().material.color = c;
+		starSpawner.active = running;
 	}
 
 	void Awake () {
 		starSpawner = GameObject.Find ("StarSpawner").GetComponent<StarSpawner> ();
 		synchronizer = GameObject.Find ("Main Camera").GetComponent<BeatSynchronizer> ();
-		isGameRunning = false;
 	}
 
 	void Start () {
@@ -53,7 +53,6 @@ public class GameManager : MonoBehaviour {
 
 	void GameOver () {
 		SetIsGameRunning (false);
-		starSpawner.active = false;
 
 		synchronizer.Stop ();
 		var dieScript = player.GetComponent<DieOnCollision> ();
