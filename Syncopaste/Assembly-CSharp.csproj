@@ -45,12 +45,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\JSON\JSONObject.cs" />
+     <Compile Include="Assets\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\BeatCounter.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\BeatObserver.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\BeatSynchronizer.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\MIDICounter.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\PatternCounter.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\SynchronizerData.cs" />
+     <Compile Include="Assets\Scripts\CollidableObjectModel.cs" />
      <Compile Include="Assets\Scripts\CollisionManager.cs" />
      <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
      <Compile Include="Assets\Scripts\DieOnCollision.cs" />
@@ -60,6 +64,8 @@
      <Compile Include="Assets\Scripts\GameObjectUtil.cs" />
      <Compile Include="Assets\Scripts\InstantVelocity.cs" />
      <Compile Include="Assets\Scripts\KeyboardSpaceFlight.cs" />
+     <Compile Include="Assets\Scripts\LevelModel.cs" />
+     <Compile Include="Assets\Scripts\LevelRunner.cs" />
      <Compile Include="Assets\Scripts\MidiEventListener.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\PixelPerfectCamera.cs" />
@@ -72,6 +78,7 @@
      <Compile Include="Assets\Scripts\SynchronizedAudioPlayer.cs" />
      <Compile Include="Assets\Scripts\UpdateShipAppearance.cs" />
      <Compile Include="Assets\Scripts\smflite-master\SmfLite.cs" />
+     <None Include="Assets\JSON\readme.txt" />
      <None Include="Assets\Sounds\CrustyCap-BeatsUnrolled.txt" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Sounds\CrustyCap-Events.txt" />

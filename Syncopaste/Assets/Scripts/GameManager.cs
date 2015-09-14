@@ -4,24 +4,31 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	public GameObject playerPrefab;
+	public GameObject enemyPrefab;
 	public GameObject startText;
+	public TextAsset levelZero;
 
 	private GameObject player;
-	private StarSpawner starSpawner;
 	private bool isGameRunning;
 	private BeatSynchronizer synchronizer;
+	private LevelRunner levelRunner;
 
 	private void SetIsGameRunning(bool running) {
 		isGameRunning = running;
 		Color c = startText.GetComponent<SpriteRenderer> ().material.color;
 		c.a = running ? 0 : 1;
 		startText.GetComponent<SpriteRenderer> ().material.color = c;
-		starSpawner.active = running;
+
+		if (isGameRunning) {
+			LevelModel level = new LevelModel(levelZero);
+			levelRunner.SetLevel(level);
+			levelRunner.Reset();
+		}
 	}
 
 	void Awake () {
-		starSpawner = GameObject.Find ("StarSpawner").GetComponent<StarSpawner> ();
 		synchronizer = GameObject.Find ("Main Camera").GetComponent<BeatSynchronizer> ();
+		levelRunner = gameObject.GetComponent<LevelRunner> ();
 	}
 
 	void Start () {
@@ -53,6 +60,11 @@ public class GameManager : MonoBehaviour {
 
 	void GameOver () {
 		SetIsGameRunning (false);
+
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy");
+		foreach (GameObject enemy in enemies) {
+			GameObjectUtil.Destroy(enemy);
+		}
 
 		synchronizer.Stop ();
 		var dieScript = player.GetComponent<DieOnCollision> ();

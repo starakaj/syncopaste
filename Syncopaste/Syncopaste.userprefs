@@ -1,17 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EventStore.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/BeatSynchronizer/SynchronizerData.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MidiEventListener.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EventStore.cs" Line="24" Column="43" />
-      <File FileName="Assets/Scripts/ScaleOnNote.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BeatSynchronizer/MIDICounter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UpdateShipAppearance.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/smflite-master/SmfLite.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SynchronizedAudioPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ProjectileShooter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SongData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="64" Column="1" />
+      <File FileName="Assets/Scripts/LevelModel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LevelRunner.cs" Line="25" Column="25" />
+      <File FileName="Assets/Scripts/CollidableObjectModel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CollisionManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/JSON/readme.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

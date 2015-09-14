@@ -5,6 +5,8 @@ Project("{2EAD43AA-36FA-DA38-0F1A-6F305DA8E0FF}") = "Syncopaste", "Assembly-CSha
 EndProject
 Project("{2EAD43AA-36FA-DA38-0F1A-6F305DA8E0FF}") = "Syncopaste", "Assembly-CSharp.csproj", "{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}"
 EndProject
+Project("{2EAD43AA-36FA-DA38-0F1A-6F305DA8E0FF}") = "Syncopaste", "Assembly-CSharp-Editor.csproj", "{9013B16D-EE50-94FB-DFC3-B4B24F3B9BBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E021F69-A17C-E7CA-B1D8-3A0F29FCAF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9013B16D-EE50-94FB-DFC3-B4B24F3B9BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9013B16D-EE50-94FB-DFC3-B4B24F3B9BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9013B16D-EE50-94FB-DFC3-B4B24F3B9BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9013B16D-EE50-94FB-DFC3-B4B24F3B9BBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																								GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

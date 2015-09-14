@@ -22,6 +22,7 @@ public class ProjectileShooter : MonoBehaviour {
 					beatType = SongData.BeatType.OffBeat;
 
 				GameObject projectile = GameObjectUtil.Instantiate(projectilePrefab, gameObject.transform.position);
+				projectile.GetComponent<CollidableObjectModel>().beatType = beatType;
 				Color c = ShipViewModel.ColorForBeatType(beatType);
 				projectile.GetComponent<SpriteRenderer>().material.color = c;
 			}
