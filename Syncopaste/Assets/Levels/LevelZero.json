@@ -1,10 +1,764 @@
 {
-  "0" : 3,
-  "4" : 3,
-  "8" : 4,
-  "12" : 5,
-  "16" : 6,
-  "20" : 2,
-  "24" : 6,
-  "28" : 6,
+  "0" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0,
+        "locationY" : 1,
+        "velocityY" : -100
+      }
+    }
+  ],
+  "1" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.5,
+        "locationY" : 1,
+        "velocityY" : -100
+      }
+    }
+  ],
+  "2" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.5,
+        "locationY" : 1,
+        "velocityY" : -100
+      }
+    }
+  ],
+  "3" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -100
+      }
+    }
+  ],
+  "4" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -100
+      }
+    }
+  ],
+  "5" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -100
+      }
+    }
+  ],
+  "8" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.5,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.5,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "12" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.5,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.5,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "16" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "20" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "24" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "28" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "30" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "32" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "34" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "36" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "38" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "40" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "44" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "46" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "48" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "50" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "52" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    }
+  ],
+  "54" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.25,
+        "locationY" : 1,
+        "velocityY" : -50
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "56" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "57" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "58" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.15,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "59" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.6,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "60" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.8,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "61" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.6,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "62" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.75,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "63" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.45,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "64" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.3,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "65" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.2,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.5,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "66" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.7,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.25,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "67" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.2,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.1,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "68" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.3,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.6,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "69" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.7,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.7,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "70" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.2,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.2,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "71" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : -0.8,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.8,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ],
+  "72" : [
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    },
+    {
+      "type" : "spawn",
+      "options" : {
+        "locationX" : 0.5,
+        "locationY" : 1,
+        "velocityY" : -25
+      }
+    }
+  ]
 }
