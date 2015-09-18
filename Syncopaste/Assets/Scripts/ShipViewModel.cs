@@ -8,6 +8,9 @@ public class ShipViewModel {
 		Color retColor;
 
 		switch (beatType) {
+		case SongData.BeatType.SyncoBeat:
+			retColor = Color.blue;
+			break;
 		case SongData.BeatType.OnBeat:
 			retColor = Color.green;
 			break;

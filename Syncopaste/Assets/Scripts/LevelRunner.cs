@@ -1,12 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using SmfLite;
 using System.Collections.Generic;
 
-public class LevelRunner : MidiEventListener {
-
-	private byte onBeatNote = 36;
-	private byte offBeatNote = 43;
+public class LevelRunner : BeatEventListener {
 
 	private LevelModel level = null;
 	private int beatCount = 0;
@@ -19,15 +15,11 @@ public class LevelRunner : MidiEventListener {
 		beatCount = 0;
 	}
 
-	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
-		StartCoroutine (HandleEventAfterDelay (e, lookaheadSeconds));
-	}
-	
-	public override bool RespondsToMidiEvent(MidiEvent e) {
-		return e.status == 144 && e.data1 == onBeatNote;
+	public override void HandleBeatEvent(int beat, int beatsPerMeasure, float lookaheadSeconds) {
+		StartCoroutine (HandleBeatAfterDelay (beat, lookaheadSeconds));
 	}
 
-	IEnumerator HandleEventAfterDelay(MidiEvent e, float delayTime) {
+	IEnumerator HandleBeatAfterDelay(int beat, float delayTime) {
 		yield return new WaitForSeconds(delayTime);
 
 		if (level != null) {

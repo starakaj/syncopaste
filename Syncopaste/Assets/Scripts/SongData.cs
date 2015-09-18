@@ -8,6 +8,7 @@ public class SongData {
 		None			= 0,
 		OnBeat			= 1,
 		OffBeat			= 2,
+		SyncoBeat		= 3,
 		BEAT_TYPE_LEN
 	};
 

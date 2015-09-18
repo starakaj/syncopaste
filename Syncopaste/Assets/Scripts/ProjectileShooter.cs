@@ -8,6 +8,7 @@ public class ProjectileShooter : MonoBehaviour {
 
 	private byte onBeatNote = 36;
 	private byte offBeatNote = 43;
+	private byte syncoBeatNote = 44;
 
 	void Update () {
 		if (Input.GetButtonDown("Fire1")) {
@@ -20,6 +21,8 @@ public class ProjectileShooter : MonoBehaviour {
 					beatType = SongData.BeatType.OnBeat;
 				else if (e.Value.data1 == offBeatNote) 
 					beatType = SongData.BeatType.OffBeat;
+				else if (e.Value.data1 == syncoBeatNote) 
+					beatType = SongData.BeatType.SyncoBeat;
 
 				GameObject projectile = GameObjectUtil.Instantiate(projectilePrefab, gameObject.transform.position);
 				projectile.GetComponent<CollidableObjectModel>().beatType = beatType;

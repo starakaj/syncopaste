@@ -6,6 +6,7 @@ public class UpdateShipAppearance: MidiEventListener {
 
 	private byte onBeatNote = 36;
 	private byte offBeatNote = 43;
+	private byte syncoBeatNote = 44;
 
 	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
 		StartCoroutine(UpdateColorForMidiEventWithDelay (e, lookaheadSeconds));
@@ -24,6 +25,8 @@ public class UpdateShipAppearance: MidiEventListener {
 			beatType = SongData.BeatType.OnBeat;
 		else if (e.data1 == offBeatNote)
 			beatType = SongData.BeatType.OffBeat;
+		else if (e.data1 == syncoBeatNote) 
+			beatType = SongData.BeatType.SyncoBeat;
 
 		Color c = ShipViewModel.ColorForBeatType (beatType);
 

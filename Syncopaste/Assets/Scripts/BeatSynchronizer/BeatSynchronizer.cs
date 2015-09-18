@@ -13,6 +13,8 @@ public class BeatSynchronizer : MonoBehaviour {
 	public float lookAhead = 0.2f;	// Number of seconds in advance that each listener should run
 	public delegate void AudioStartAction(double syncTime, double lookahead);
 	public static event AudioStartAction OnAudioStart;
+	public delegate void AudioStopAction ();
+	public static event AudioStopAction OnAudioStop;
 
 	public void Play () {
 		Debug.Assert (startDelay > lookAhead);
@@ -20,12 +22,15 @@ public class BeatSynchronizer : MonoBehaviour {
 		double initTime = AudioSettings.dspTime;
 		GetComponent<AudioSource>().PlayScheduled(initTime + startDelay);
 		if (OnAudioStart != null) {
-			OnAudioStart(initTime + startDelay - lookAhead, lookAhead);
+			OnAudioStart (initTime + startDelay - lookAhead, lookAhead);
 		}
 	}
 
 	public void Stop () {
 		GetComponent<AudioSource> ().Stop ();
+		if (OnAudioStop != null) {
+			OnAudioStop ();
+		}
 	}
 
 }

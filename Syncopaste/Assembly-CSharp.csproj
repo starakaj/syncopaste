@@ -48,10 +48,13 @@
      <Compile Include="Assets\JSON\JSONObject.cs" />
      <Compile Include="Assets\JSON\JSONTemplates.cs" />
      <Compile Include="Assets\JSON\VectorTemplates.cs" />
+     <Compile Include="Assets\Scripts\AudioSourceSynchronizer.cs" />
+     <Compile Include="Assets\Scripts\BeatEventListener.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\BeatCounter.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\BeatObserver.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\BeatSynchronizer.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\MIDICounter.cs" />
+     <Compile Include="Assets\Scripts\BeatSynchronizer\MetronomeCounter.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\PatternCounter.cs" />
      <Compile Include="Assets\Scripts\BeatSynchronizer\SynchronizerData.cs" />
      <Compile Include="Assets\Scripts\CollidableObjectModel.cs" />
@@ -77,13 +80,16 @@
      <Compile Include="Assets\Scripts\SongData.cs" />
      <Compile Include="Assets\Scripts\StarSpawner.cs" />
      <Compile Include="Assets\Scripts\SynchronizedAudioPlayer.cs" />
+     <Compile Include="Assets\Scripts\SynchronizedAudioSwapper.cs" />
+     <Compile Include="Assets\Scripts\SynchronizedMIDISwapper.cs" />
      <Compile Include="Assets\Scripts\UpdateShipAppearance.cs" />
      <Compile Include="Assets\Scripts\smflite-master\SmfLite.cs" />
+     <None Include="Assets\Sounds\CrustyCap-MainBeatsUnrolled.txt" />
      <None Include="Assets\JSON\readme.txt" />
-     <None Include="Assets\Sounds\CrustyCap-BeatsUnrolled.txt" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Sounds\CrustyCap-Events.txt" />
      <None Include="Assets\Sounds\Mucking.txt" />
+     <None Include="Assets\Sounds\CrustyCap-AltBeatsUnrolled.txt" />
      <None Include="Assets\Sounds\CrustyCap-Beats.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -9,8 +9,8 @@ public class MIDICounter : MonoBehaviour {
 	public float bpm = 80f;
 	public float loopTime = 30f;
 	public AudioSource audioSource;
-	public GameObject[] observers;
 	public TextAsset midiFile;
+	public bool outputEnabled = true;
 
 	private MidiTrackSequencer midiSeq;
 	private float timeOffset;
@@ -86,10 +86,13 @@ public class MIDICounter : MonoBehaviour {
 	}
 
 	void HandleMidiEvent (MidiEvent e) {
-		MidiEventListener[] listeners = FindObjectsOfType<MidiEventListener> ();
-		foreach (MidiEventListener l in listeners) {
-			if (l.RespondsToMidiEvent(e))
-				l.HandleMidiEvent(e, lookaheadSeconds);
+
+		if (outputEnabled) {
+			MidiEventListener[] listeners = FindObjectsOfType<MidiEventListener> ();
+			foreach (MidiEventListener l in listeners) {
+				if (l.RespondsToMidiEvent (e))
+					l.HandleMidiEvent (e, lookaheadSeconds);
+			}
 		}
 	}
 }
