@@ -48,7 +48,7 @@ public struct SpawnLevelAction: ILevelAction {
 		GameObject enemyPrefab = GameObject.Find("GameManager").GetComponent<GameManager>().enemyPrefab;
 		Vector3 pos = new Vector3(spawnX, spawnY, 0);
 		GameObject enemy = GameObjectUtil.Instantiate(enemyPrefab, pos);
-		enemy.GetComponent<InstantVelocity>().velocity = new Vector2 (velocityX, velocityY);
+		enemy.GetComponent<InstantVelocity>().velocity = new Vector2 (velocityX, velocityY);	
 		CollidableObjectModel collidable = enemy.GetComponent<CollidableObjectModel> ();
 		collidable.beatType = SongData.GetRandomBeat();
 		enemy.GetComponent<SpriteRenderer>().material.color = ShipViewModel.ColorForBeatType(collidable.beatType);
@@ -111,7 +111,6 @@ public class LevelModel {
 				}
 				List<ILevelAction> actions = beatActions[beat];
 				actions.Add(action);
-				Debug.Log ("Beat: " + beat + " Action: " + action);
 			}
 		}
 	}

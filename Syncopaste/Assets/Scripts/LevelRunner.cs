@@ -20,7 +20,7 @@ public class LevelRunner : MidiEventListener {
 	}
 
 	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
-		StartCoroutine(HandleEventAfterDelay (e, lookaheadSeconds));
+		StartCoroutine (HandleEventAfterDelay (e, lookaheadSeconds));
 	}
 	
 	public override bool RespondsToMidiEvent(MidiEvent e) {
@@ -33,12 +33,9 @@ public class LevelRunner : MidiEventListener {
 		if (level != null) {
 			if (level.HasActionsForBeat(beatCount)) {
 				List<ILevelAction> actions = level.GetActionsForBeat(beatCount);
-				Debug.Log(actions.Count + " actions for beat " + beatCount);
 				foreach (ILevelAction action in actions) {
 					action.PerformAction();
 				}
-			} else {
-				Debug.Log("No actions for beat " + beatCount);
 			}
 			
 			beatCount++;
