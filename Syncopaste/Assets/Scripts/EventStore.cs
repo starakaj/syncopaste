@@ -4,6 +4,8 @@ using SmfLite;
 
 public class EventStore : MidiEventListener {
 
+	public MIDICounter midiCounter;
+
 	private MidiEvent? mevent;
 	private float endValidTime;
 	private IEnumerator currentCoroutine;
@@ -11,14 +13,14 @@ public class EventStore : MidiEventListener {
 	private float leadingCushionSeconds = 0.1f;
 	private float trailingCushionSeconds = 0.2f;
 
-	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
+	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds, MIDICounter source) {
 
 		currentCoroutine = AddMidiEventWithTimeBoundaries (e, lookaheadSeconds - leadingCushionSeconds, lookaheadSeconds + trailingCushionSeconds);
 		StartCoroutine (currentCoroutine);
 	}
 
-	public override bool RespondsToMidiEvent(MidiEvent e) {
-		return e.status == 144;
+	public override bool RespondsToMidiEvent(MidiEvent e, MIDICounter source) {
+		return midiCounter == source && e.status == 144;
 	}
 
 	public MidiEvent? GetCurrentMidiEvent() {

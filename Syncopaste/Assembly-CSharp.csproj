@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\DestroyOffscreen.cs" />
      <Compile Include="Assets\Scripts\DieOnCollision.cs" />
      <Compile Include="Assets\Scripts\EventStore.cs" />
+     <Compile Include="Assets\Scripts\FadingAudioSource.cs" />
      <Compile Include="Assets\Scripts\ForwardCollision.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameObjectUtil.cs" />
@@ -79,8 +80,8 @@
      <Compile Include="Assets\Scripts\ShipViewModel.cs" />
      <Compile Include="Assets\Scripts\SongData.cs" />
      <Compile Include="Assets\Scripts\StarSpawner.cs" />
-     <Compile Include="Assets\Scripts\SynchronizedAudioPlayer.cs" />
      <Compile Include="Assets\Scripts\SynchronizedAudioSwapper.cs" />
+     <Compile Include="Assets\Scripts\SynchronizedLoopSwapper.cs" />
      <Compile Include="Assets\Scripts\SynchronizedMIDISwapper.cs" />
      <Compile Include="Assets\Scripts\UpdateShipAppearance.cs" />
      <Compile Include="Assets\Scripts\smflite-master\SmfLite.cs" />
@@ -91,11 +92,17 @@
      <None Include="Assets\Sounds\Mucking.txt" />
      <None Include="Assets\Sounds\CrustyCap-AltBeatsUnrolled.txt" />
      <None Include="Assets\Sounds\CrustyCap-Beats.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

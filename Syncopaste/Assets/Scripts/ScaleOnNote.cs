@@ -7,11 +7,11 @@ public class ScaleOnNote : MidiEventListener {
 	public byte note;
 	public Vector2 scaleRange = new Vector2 (5f, 25f);
 
-	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
+	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds, MIDICounter source) {
 		StartCoroutine(PulseAfterDelay (lookaheadSeconds));
 	}
 
-	public override bool RespondsToMidiEvent(MidiEvent e) {
+	public override bool RespondsToMidiEvent(MidiEvent e, MIDICounter source) {
 		return (e.status == 144 && e.data2 == note);
 	}
 

@@ -12,11 +12,19 @@ public class SynchronizedMIDISwapper : BeatEventListener {
 	void Start () {
 		MixLoopsForCurrentLoopIndex ();
 	}
+
+	public MIDICounter ActiveMIDICounter() {
+		return midiLoops [currentLoopIndex];
+	}
 	
 	private void MixLoopsForCurrentLoopIndex () {
 		for (int i=0; i<midiLoops.Length; ++i) {
-			midiLoops[i].outputEnabled = (i == currentLoopIndex);
+			midiLoops[i].outputEnabled = true; // No-op for now, I suppose
 		}
+	}
+
+	public int GetActiveLoopIndex() {
+		return currentLoopIndex;
 	}
 	
 	override public void HandleBeatEvent(int beat, int beatsPerMeasure, float lookaheadSeconds) {

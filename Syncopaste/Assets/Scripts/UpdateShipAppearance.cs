@@ -8,28 +8,35 @@ public class UpdateShipAppearance: MidiEventListener {
 	private byte offBeatNote = 43;
 	private byte syncoBeatNote = 44;
 
-	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds) {
-		StartCoroutine(UpdateColorForMidiEventWithDelay (e, lookaheadSeconds));
+	public override void HandleMidiEvent(MidiEvent e, float lookaheadSeconds, MIDICounter source) {
+		StartCoroutine(UpdateColorForMidiEventWithDelay (e, lookaheadSeconds, source));
 	}
 
-	public override bool RespondsToMidiEvent(MidiEvent e) {
+	public override bool RespondsToMidiEvent(MidiEvent e, MIDICounter source) {
 		return e.status == 144;
 	}
 	
-	IEnumerator UpdateColorForMidiEventWithDelay(MidiEvent e, float lookahead) {
+	IEnumerator UpdateColorForMidiEventWithDelay(MidiEvent e, float lookahead, MIDICounter source) {
 
 		yield return new WaitForSeconds (lookahead);
 
-		SongData.BeatType beatType = SongData.BeatType.None;
-		if (e.data1 == onBeatNote) 
-			beatType = SongData.BeatType.OnBeat;
-		else if (e.data1 == offBeatNote)
-			beatType = SongData.BeatType.OffBeat;
-		else if (e.data1 == syncoBeatNote) 
-			beatType = SongData.BeatType.SyncoBeat;
+		SynchronizedMIDISwapper swapper = GameObject.Find ("MidiManager").GetComponent<SynchronizedMIDISwapper> ();
 
-		Color c = ShipViewModel.ColorForBeatType (beatType);
+		if (swapper.ActiveMIDICounter () == source) {
+			SongData.BeatType beatType = SongData.BeatType.None;
+			if (e.data1 == onBeatNote) 
+				beatType = SongData.BeatType.OnBeat;
+			else if (e.data1 == offBeatNote)
+				beatType = SongData.BeatType.OffBeat;
+			else if (e.data1 == syncoBeatNote) 
+				beatType = SongData.BeatType.SyncoBeat;
 
-		gameObject.GetComponent<SpriteRenderer> ().material.color = c;
+			Color c = ShipViewModel.ColorForBeatType (beatType);
+
+			Debug.Log ("Setting color to: " + c);
+			gameObject.GetComponent<SpriteRenderer> ().material.color = c;
+		} else {
+			Debug.Log ("Ignoring MIDI event " + e);
+		}
 	}
 }

@@ -212,12 +212,9 @@ namespace SmfLite
             while (pulseCounter >= pulseToNext) {
                 var pair = enumerator.Current;
 
-//				UnityEngine.Debug.Log(pair.midiEvent);
-
                 messages.Add (pair.midiEvent);
                 if (!enumerator.MoveNext ()) {
 					playing = false;
-					UnityEngine.Debug.Log (messages);
                     break;
                 }
                 

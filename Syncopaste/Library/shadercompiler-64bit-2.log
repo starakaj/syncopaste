@@ -111,3 +111,6 @@ Cmd: compileSnippet
   api=0 type=1 insize=1934 outsize=6 kw=SPOT SHADOWS_DEPTH SHADOWS_SOFT SHADOWS_NATIVE UNITY_HDR_ON pd= ok=1
 Cmd: compileSnippet
   api=0 type=0 insize=823 outsize=650 kw=UNITY_HDR_ON pd= ok=1
+End of pipe
+
+Quitting shader compiler process

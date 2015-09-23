@@ -13,7 +13,9 @@ public class ProjectileShooter : MonoBehaviour {
 	void Update () {
 		if (Input.GetButtonDown("Fire1")) {
 
-			MidiEvent? e = GameObject.Find("GameManager").GetComponent<EventStore>().GetCurrentMidiEvent();
+			SynchronizedMIDISwapper swapper = GameObject.Find("MidiManager").GetComponent<SynchronizedMIDISwapper> ();
+			EventStore store = GameObject.Find("MidiManager").GetComponents<EventStore>()[swapper.GetActiveLoopIndex()];
+			MidiEvent? e = store.GetCurrentMidiEvent();
 
 			if (e.HasValue) {
 				SongData.BeatType beatType = SongData.BeatType.None;
