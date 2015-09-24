@@ -33,10 +33,7 @@ public class UpdateShipAppearance: MidiEventListener {
 
 			Color c = ShipViewModel.ColorForBeatType (beatType);
 
-			Debug.Log ("Setting color to: " + c);
 			gameObject.GetComponent<SpriteRenderer> ().material.color = c;
-		} else {
-			Debug.Log ("Ignoring MIDI event " + e);
-		}
+		} 
 	}
 }

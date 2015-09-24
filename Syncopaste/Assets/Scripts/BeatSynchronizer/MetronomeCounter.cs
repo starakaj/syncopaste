@@ -82,6 +82,6 @@ public class MetronomeCounter : MonoBehaviour {
 		foreach (BeatEventListener l in listeners) {
 			l.HandleBeatEvent(nextBeat, beatsPerMeasure, lookaheadSeconds);
 		}
-		nextBeat = (nextBeat + 1) % beatsPerMeasure;
+		nextBeat = (nextBeat + 1);
 	}
 }

@@ -28,7 +28,7 @@ public class SynchronizedMIDISwapper : BeatEventListener {
 	}
 	
 	override public void HandleBeatEvent(int beat, int beatsPerMeasure, float lookaheadSeconds) {
-		if (beat == 0) {
+		if ((beat % beatsPerMeasure) == 0) {
 			if (scheduledLoopIndex != currentLoopIndex) {
 				StartCoroutine (UpdateLoopIndexWithDelay (lookaheadSeconds));
 			}
@@ -36,7 +36,7 @@ public class SynchronizedMIDISwapper : BeatEventListener {
 	}
 	
 	IEnumerator UpdateLoopIndexWithDelay(float delayTime) {
-		yield return new WaitForSeconds(delayTime);
+		yield return new WaitForSeconds(delayTime - 0.1f);
 		
 		if (scheduledLoopIndex != currentLoopIndex) {
 			currentLoopIndex = scheduledLoopIndex;

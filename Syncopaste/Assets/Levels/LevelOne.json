@@ -1,0 +1,186 @@
+{
+  "beats" : {
+    "0.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "locationX" : 0,
+          "locationY" : 1,
+          "velocityY" : -10
+        }
+      }
+    ],
+    "4.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "locationX" : -0.25,
+          "locationY" : 1,
+          "velocityY" : -10
+        }
+      },
+      {
+        "type" : "spawn",
+        "options" : {
+          "locationX" : 0.25,
+          "locationY" : 1,
+          "velocityY" : -10
+        }
+      }
+    ],
+    "8.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "12.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "16.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "20.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "22.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 1,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "22.2" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 1,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "22.4" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 1,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "22.6" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 1,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "26.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "30.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "34.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "38.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "42.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 3,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+    "44.0" : [
+      {
+        "type" : "spawn",
+        "options" : {
+          "count" : 12,
+          "locationX" : [-0.9, 0.9],
+          "locationY" : 1,
+          "velocityY" : -15
+        }
+      }
+    ],
+  }
+}
